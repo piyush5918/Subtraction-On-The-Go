@@ -6,13 +6,6 @@ const controller = require('../controllers/subtraction');
 const httpStatusCodeConfig = require('../config/httpStatusCodes.json');
 const validationSchema = require('../middleware/validationSchema');
 
-router.get('/', (req, res) => {
-  console.log('health check');
-  return res.status(httpStatusCodeConfig['oK']).send({
-    message: 'ok'
-  });
-});
-
 router.post('/subtract', checkSchema(validationSchema.subtraction()), (req, res, next) => {
   try {
     validationResult(req).throw();
