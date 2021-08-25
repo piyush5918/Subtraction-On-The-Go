@@ -17,7 +17,7 @@ Aim is to generate Multiple Choice Questions based on Subtraction at runtime.
 ```
 Method: POST
 
-Endpoint: /subtract
+Endpoint: https://floating-shore-98807.herokuapp.com/operations/subtract
 
 Body : { numberOfQuestions: 3, minuend : [2,3,4], subtrahend : [1,2,3], borrow : true}
 
@@ -26,7 +26,7 @@ CURL
 
 ```
 
-curl --location --request POST 'localhost:3080/subtract' \
+curl --location --request POST 'https://floating-shore-98807.herokuapp.com/operations/subtract' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "borrow": true,
