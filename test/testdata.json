@@ -1,0 +1,12 @@
+{
+    "testcase" : [
+        {
+            "body" : {
+                "numberOfQuestions" : "1",
+                "borrow" : false,
+                "minuend": [4],
+                "subtrahend" : [3]
+            }
+        }
+    ]
+}
