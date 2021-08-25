@@ -4,8 +4,8 @@
   "description": "API for Subtraction on the Go",
   "scripts": {
     "prettier": "prettier --write '**/*.js'",
-    "start": "node ./bin/www",
-    "start-local": "nodemon ./bin/www",
+    "start": "node ./app",
+    "start-local": "nodemon ./app",
     "test": "mocha test/subtraction",
     "lint": "eslint '**/*.js' --ignore-pattern node_modules/",
     "lint-fix": "eslint . --fix --quiet"
