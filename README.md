@@ -11,6 +11,9 @@ npm start
 ## Docker setup:
 
 docker build -t <docker_name> .
+
+<br>
+
 docker run -p 8002:3080 <docker_name>
 # API
 
