@@ -43,7 +43,7 @@ app.use((error, req, res, next) => {
 
 console.log('SERVER IS UP >>>> ');
 
-const port = process.env.PORT || '5000';
+const port = process.env.PORT || '3080';
 app.listen(port, () => console.log(`Server started on Port ${port}`));
 
 module.exports = app;

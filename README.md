@@ -8,6 +8,10 @@ npm install
 
 npm start
 
+## Docker setup:
+
+docker build -t <docker_name> .
+docker run -p 8002:3080 <docker_name>
 # API
 
 ## Subtract
