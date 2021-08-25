@@ -35,7 +35,7 @@ module.exports = {
     },
     subtrahend: {
       exists: {
-        errorMessage: 'Number of digits in Minuend is Missing'
+        errorMessage: 'Number of digits in Subtrahend is Missing'
       },
       custom: {
         options: (subtrahend, { req }) => {
