@@ -2,16 +2,16 @@
  * Module dependencies.
  */
 
-const config = require("config");
-const http = require("http");
-const app = require("../app");
+const config = require('config');
+const http = require('http');
+const app = require('../app');
 
 /**
  * Get port from environment and store in Express.
  */
 
 const port = normalizePort(config.port);
-app.set("port", port);
+app.set('port', port);
 
 /**
  * Create HTTP server.
@@ -25,7 +25,7 @@ const server = http.createServer(app);
 server.listen(port, () => {
   console.log(`Express server listening on port ${server.address().port}`);
 });
-server.on("listening", onListening);
+server.on('listening', onListening);
 
 /**
  * Normalize a port into a number, string, or false.
@@ -53,6 +53,6 @@ function normalizePort(val) {
 
 function onListening() {
   const addr = server.address();
-  const bind = typeof addr === "string" ? `pipe ${addr}` : `port ${addr.port}`;
+  const bind = typeof addr === 'string' ? `pipe ${addr}` : `port ${addr.port}`;
   console.log(`Listening on ${bind}`);
 }

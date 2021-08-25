@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "API for Subtraction on the Go",
   "scripts": {
+    "prettier": "prettier --write '**/*.js'",
     "start": "node ./bin/www",
     "start-local": "nodemon ./bin/www",
     "test": "mocha test/subtraction",
