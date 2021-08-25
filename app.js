@@ -26,6 +26,10 @@ app.use(cors());
 
 app.use(routes);
 
+app.get('/', (req,res) => {
+  res.send('Welcome !!');
+})
+
 // The error handler must be before any other error middleware and after all controllers
 app.use((error, req, res, next) => {
   const status = error.statusCode || 500;
